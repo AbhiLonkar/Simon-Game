@@ -35,7 +35,7 @@ $(".btn").on("click",function(){
 
 
 function soundPlay(name){
-    var aud1 = new Audio("sounds/"+name+".mp3")
+    var aud1 = new Audio(name+".mp3")
     aud1.play();
 }
 
@@ -58,7 +58,7 @@ function checkAnswer(currentlevel){
     }
     else {
         $("h1").text("Game over,press any key to restart")
-        var aud3 = new Audio("sounds/wrong.mp3")
+        var aud3 = new Audio("wrong.mp3")
         aud3.play();
 
         $("body").addClass("game-over");
